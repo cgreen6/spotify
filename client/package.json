@@ -1,5 +1,5 @@
-"proxy": "http://localhost:3001",
-"scripts": {
+
+{
   "name": "client",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +12,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.0"
   },
+  "proxy": "http://localhost:3001",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
