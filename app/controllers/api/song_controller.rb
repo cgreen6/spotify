@@ -1,6 +1,8 @@
 class Api::SongController < ApplicationController
+  def skip-routes
+  end
 
-def index
+  def index
   render json: Song.all
 end
 def show
@@ -34,8 +36,8 @@ private
   def song_params
     params.require(:song).permit(:attr, :attr2, :everything the table has)
   end
-  def set_parent
-    @artist = Artist.find(params[:parent_id])
-  end
+  # def set_parent
+  #   @artist = Artist.find(params[:parent_id])
+  # end
 
 end
