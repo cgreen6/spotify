@@ -1,4 +1,6 @@
 class Api::SongController < ApplicationController
+  before_action :set_artist
+  before_action :set_song only: [:show, :update, :destroy]
   def skip-routes
   end
 
