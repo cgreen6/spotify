@@ -25,6 +25,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_06_213454) do
 
   create_table "billboards", force: :cascade do |t|
     t.string "name"
+    t.string "genre"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "description"
